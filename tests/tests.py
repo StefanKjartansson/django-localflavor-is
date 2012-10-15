@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 
-from django.contrib.localflavor.is_.forms import (ISIdNumberField,
+from django_localflavor_is.forms import (ISIdNumberField,
     ISPhoneNumberField, ISPostalCodeSelect)
 
 from django.test import SimpleTestCase
@@ -55,6 +55,8 @@ class ISLocalFlavorTests(SimpleTestCase):
 <option value="250">250 Gar\xf0ur</option>
 <option value="260">260 Reykjanesb\xe6r</option>
 <option value="270">270 Mosfellsb\xe6r</option>
+<option value="271">271 Mosfellsb\xe6r</option>
+<option value="276">276 Mosfellsb\xe6r</option>
 <option value="300">300 Akranes</option>
 <option value="301">301 Akranes</option>
 <option value="302">302 Akranes</option>
@@ -144,6 +146,7 @@ class ISLocalFlavorTests(SimpleTestCase):
 <option value="802">802 Selfoss</option>
 <option value="810">810 Hverager\xf0i</option>
 <option value="815">815 \xdeorl\xe1ksh\xf6fn</option>
+<option value="816">816 \xd6lfus</option>
 <option value="820">820 Eyrarbakki</option>
 <option value="825">825 Stokkseyri</option>
 <option value="840">840 Laugarvatn</option>
