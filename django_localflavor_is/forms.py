@@ -9,12 +9,11 @@ from django.forms import ValidationError
 from django.forms.fields import RegexField
 from django.forms.widgets import Select
 
-# django 1.4 support
-import django
-if django.VERSION < (1, 5):
-    from django.utils.encoding import smart_unicode as smart_text
-else:
+try:
     from django.utils.encoding import smart_text
+except ImportError:
+    # Attempt to import from a lesser version
+    from django.utils.encoding import smart_unicode as smart_text
 
 from django.utils.translation import ugettext_lazy as _
 
